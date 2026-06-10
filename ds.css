@@ -1,0 +1,12 @@
+#noBtn {
+    position: fixed;
+    background: #777;
+    color: white;
+    z-index: 1000;
+}
+button {
+    width: 220px;
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 14px;
+}
