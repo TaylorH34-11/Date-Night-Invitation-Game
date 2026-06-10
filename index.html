@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Date Invitation ❤️</title>
+<title>Date Night Invitation ❤️</title>
 
 <style>
     * {
@@ -12,7 +12,7 @@
 
     body {
         font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+        background: linear-gradient(135deg, #e0a1a8, #4076f5);
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -23,7 +23,7 @@
     }
 
     .card {
-        background: white;
+        background: rgb(245, 241, 241);
         padding: 40px;
         border-radius: 20px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.15);
@@ -32,7 +32,7 @@
     }
 
     h1 {
-        color: #ff4d6d;
+        color: #ed0732;
     }
 
     button {
@@ -49,9 +49,23 @@
         color: white;
     }
 
+    .yes-btn:hover {
+        background: #45a049;
+        scale: 1.1;
+        box-shadow: 0 0 15px rgba(76, 175, 80, 0.7);
+        transition: all 0.2s ease;
+    }
+
     .choice-btn {
         background: #ff4d6d;
         color: white;
+    }
+
+    .choice-btn:hover {
+        background: #ff1a4d;
+        scale: 1.1;
+        box-shadow: 0 0 15px rgba(255, 77, 109, 0.7);
+        transition: all 0.2s ease;
     }
 
     #noBtn {
@@ -72,6 +86,8 @@
 </head>
 
 <body>
+    
+<!--Slide for resturaunt choice-->
 
 <div class="card fade" id="app">
     <h1>❤️ Quick Question ❤️</h1>
@@ -80,6 +96,7 @@
     <button class="yes-btn" onclick="startQuestions()">Yes 😊</button>
     <button id="noBtn">No 😢</button>
 </div>
+
 
 <script>
 
@@ -99,16 +116,16 @@ noBtn.addEventListener("touchstart", moveButton);
 const questions = [
 {
     question: "What sounds best?",
-    options: ["Pizza 🍕", "Burgers 🍔", "Sushi 🍣"]
-},
-{
-    question: "Pick a vibe:",
-    options: ["Movie 🎬", "Walk 🌅", "Mini Golf ⛳"]
+    options: ["Pho 🍜", "Chicken Nuggets 🧽", "Sushi 🍣"]
 },
 {
     question: "Choose a dessert:",
-    options: ["Ice Cream 🍨", "Cake 🍰", "Cookies 🍪"]
-}
+    options: ["Ice Cream 🍨", "Cake 🍰", "Fruits 🍍🍎🍓🍇"]
+},
+{
+    question: "Pick a for after dinner vibe:",
+    options: ["Movie 🎬", "Walk 🌅", "Mini Golf ⛳"]
+},
 ];
 
 let currentQuestion = 0;
@@ -157,10 +174,11 @@ function showFinalPage() {
 
         <hr>
 
-        <h2>Friday at 7:00 PM?</h2>
+        <h2>Friday at 5:30 PM?</h2>
 
         <p>
-        I'd love to take you out ❤️
+        I'd love to take you out, Lanny :) ❤️
+        ~ Made by Teaver 🐿️❤️🦫
         </p>
     `;
 }
